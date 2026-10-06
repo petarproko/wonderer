@@ -1,0 +1,87 @@
+:root {
+  /* Colors */
+  --color-primary: #003049;
+  --color-secondary: #f4a261;
+  --color-background: #ffffff;
+  --color-text: #14505a;
+  --color-text-light: #ffffff;
+
+  /* Navigation */
+  --navbar-background: var(--color-background);
+  --navbar-text: var(--color-primary);
+
+  /* Spacing */
+  --navbar-padding-y: 20px;
+  --navbar-padding-x: 50px;
+  --navigation-gap: 35px;
+
+  /* Typography */
+  --logo-size: 24px;
+  --nav-font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  padding: 20px 50px;
+  margin: 0;
+
+  background-color: white;
+  z-index: 1000;
+
+  border-bottom: 1px solid #ed7b4f;
+}
+
+.logo {
+  justify-self: start;
+
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 35px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.navigation a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: color 0.2s ease;
+}
+
+.navigation a:hover {
+  color: #f4a261;
+}
+
+.hero-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
