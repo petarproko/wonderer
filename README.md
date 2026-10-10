@@ -22,8 +22,7 @@ A modern, responsive travel agency website focused on discovering destinations a
 ```text
 wanderer/
 ├── index.html
-├── css/
-│   └── style.css
+├── style.css
 └── images/
     ├── hero.jpg
     ├── tour.jpg
